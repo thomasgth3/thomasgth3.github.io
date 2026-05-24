@@ -1,0 +1,364 @@
+export const translations = {
+  fr: {
+    meta: {
+      htmlLang: 'fr',
+    },
+    nav: {
+      about: 'À propos',
+      skills: 'Compétences',
+      experience: 'Expérience',
+      projects: 'Projets',
+      contact: 'Contact',
+      openMenu: 'Ouvrir le menu',
+      closeMenu: 'Fermer le menu',
+      toggleTheme: 'Changer de thème',
+    },
+    hero: {
+      tagline: 'Disponible pour de nouvelles opportunités',
+      role: 'Data Scientist & ML Engineer',
+      description:
+        "Passionné par l'IA et le Machine Learning, je transforme les données en insights actionnables et développe des solutions intelligentes pour résoudre des problèmes complexes.",
+      viewProjects: 'Voir mes projets',
+      contactMe: 'Me contacter',
+      scrollHint: 'Faites défiler',
+    },
+    about: {
+      title: 'À propos',
+      description:
+        "Data Scientist passionné par l'intelligence artificielle et le Machine Learning, je me spécialise dans l'analyse de données complexes et le développement de modèles prédictifs. Mon expertise couvre l'ensemble du cycle de vie des projets data, de la collecte et préparation des données à la mise en production de modèles ML. J'aime résoudre des problèmes complexes en combinant rigueur analytique et créativité technique.",
+      qualities: [
+        {
+          title: 'Apprentissage Rapide',
+          description:
+            "Capacité d'apprentissage rapide et adaptation aux nouvelles technologies et méthodologies.",
+        },
+        {
+          title: 'Résolution de Problèmes',
+          description:
+            'Approche analytique et créative pour résoudre des problèmes complexes de data science.',
+        },
+        {
+          title: 'Autonomie & Communication',
+          description:
+            'Capacité à travailler de manière autonome tout en maintenant une communication efficace avec les équipes.',
+        },
+      ],
+    },
+    skills: {
+      title: 'Compétences',
+      programmingLanguages: 'Langages de programmation',
+      engineeringConcepts: "Concepts d'ingénierie",
+      frontendDevelopment: 'Développement Front-end',
+      databaseSystems: 'Bases de données & Cloud',
+      developmentTools: 'Outils de développement',
+      languages: 'Langues parlées',
+    },
+    experience: {
+      title: 'Expérience',
+      professionalTab: 'Expérience Professionnelle',
+      academicTab: 'Parcours Académique',
+      present: 'Présent',
+      jobs: [
+        {
+          title: 'Stage — Développeur Python / Data Visualization Engineer',
+          company: 'TotalEnergies',
+          period: 'Avr. 2025 — Sept. 2025',
+          location: 'Pau, France',
+          technologies: ['Python', 'Plotly', 'HTML/CSS', 'JavaScript'],
+          description:
+            "Développement d'une solution légère et intégrable dans des scripts de simulation pour valider les contrôles qualité (QC) des simulations destinées aux ingénieurs réservoir. Conception de visualisations interactives en Python et création d'un dashboard web dynamique afin de présenter les résultats de manière claire et accessible.",
+        },
+        {
+          title: 'Stage — Machine Learning',
+          company: 'Universidad de Zaragoza',
+          period: 'Juin 2024 — Août 2024',
+          location: 'Saragosse, Espagne',
+          technologies: ['Python', 'TensorFlow', 'Keras', 'CNN'],
+          description:
+            "Étude et application de techniques de classification d'images médicales (CNN, réseaux de neurones) pour la détection de pneumonie sur radiographies.",
+        },
+        {
+          title: 'Stage — Développeur Java',
+          company: 'TotalEnergies',
+          period: 'Juin 2023 — Sept. 2023',
+          location: 'Pau, France',
+          technologies: ['Java', 'SonarQube', 'Jira'],
+          description:
+            "Contribution au développement et à l'optimisation d'une application interne critique. Utilisation de SonarQube pour identifier et corriger code smells et vulnérabilités, réduction active de la dette technique et amélioration de la qualité globale du code.",
+        },
+      ],
+      education: [
+        {
+          title: 'Ingénieur en Mathématiques Appliquées — spécialisation HPDA (High Performance Data Analytics)',
+          company: 'CY Tech',
+          period: '2022 — 2025',
+          location: 'Pau, France',
+        },
+        {
+          title: 'Classe Préparatoire Intégrée',
+          company: 'CY Tech',
+          period: '2020 — 2022',
+          location: 'Pau, France',
+        },
+        {
+          title: 'CPGE PTSI',
+          company: 'Lycée Déodat de Séverac',
+          period: '2019 — 2020',
+          location: 'Toulouse, France',
+        },
+        {
+          title: 'Baccalauréat Scientifique',
+          company: 'Lycée Saint Cricq',
+          period: '2016 — 2019',
+          location: 'Pau, France',
+        },
+      ],
+    },
+    projects: {
+      title: 'Projets',
+      viewProject: 'Voir le projet',
+      viewGithub: 'Voir sur GitHub',
+      sourcePrivate: 'Code source bientôt disponible',
+      filterAll: 'Tous',
+      viewGrid: 'Vue grille',
+      viewList: 'Vue liste',
+      items: [
+        {
+          title: 'Débruitage d’images par PCA',
+          description:
+            "Réduction du bruit (gaussien) sur images via analyse en composantes principales. Reconstruction optimale à partir des k composantes principales, comparaison quantitative (PSNR) face aux filtres classiques.",
+          tags: ['Python', 'NumPy', 'Scikit-learn', 'OpenCV'],
+          github: '',
+          impact: 'PSNR amélioré vs filtres gaussien/médian classiques',
+        },
+        {
+          title: 'Trading algorithmique par Reinforcement Learning',
+          description:
+            "Agent autonome entraîné sur des données de marché historiques (actions). Fonction de récompense intégrant Sharpe ratio, max drawdown et coûts de transaction.",
+          tags: ['Python', 'PyTorch', 'Gymnasium', 'Stable-Baselines3', 'Pandas'],
+          github: '',
+          impact: 'Backtest multi-actifs avec coûts de transaction réalistes',
+        },
+        {
+          title: 'Traducteur Speech-to-Speech temps réel',
+          description:
+            "Pipeline complet de traduction vocale : ASR (Whisper), traduction, TTS avec préservation de la voix (YourTTS / VITS). Support de plus de 5 langues.",
+          tags: ['Python', 'Whisper', 'Transformers', 'FastAPI'],
+          github: '',
+          impact: 'Latence < 2s sur GPU consumer, +5 langues supportées',
+        },
+        {
+          title: 'Spectroscopie Raman & classification chimique',
+          description:
+            "Prétraitement des spectres Raman (correction de ligne de base ALS, débruitage Savitzky-Golay, normalisation). Classification multi-classes (polymères, biomolécules) via SVM, Random Forest et réseaux denses.",
+          tags: ['Python', 'Scikit-learn', 'SciPy', 'NumPy'],
+          github: '',
+          impact: 'Pipeline reproductible, accuracy > 90% sur dataset interne',
+        },
+      ],
+    },
+    contact: {
+      title: 'Contact',
+      letsConnect: 'Restons en contact',
+      connectDescription:
+        'Toujours intéressé par de nouvelles opportunités, collaborations et conversations.',
+      elsewhere: 'Ailleurs',
+      formName: 'Nom',
+      formNamePlaceholder: 'Votre nom',
+      formEmail: 'Email',
+      formEmailPlaceholder: 'votre.email@exemple.com',
+      formMessage: 'Message',
+      formMessagePlaceholder: 'Votre message...',
+      formSend: 'Envoyer le message',
+      formSending: 'Envoi en cours...',
+      formSuccess: 'Message envoyé avec succès !',
+      formError: 'Une erreur est survenue. Veuillez réessayer.',
+    },
+    footer: {
+      rights: 'Tous droits réservés.',
+      builtWith: 'Construit avec Next.js, Tailwind & beaucoup de café.',
+    },
+  },
+  en: {
+    meta: {
+      htmlLang: 'en',
+    },
+    nav: {
+      about: 'About',
+      skills: 'Skills',
+      experience: 'Experience',
+      projects: 'Projects',
+      contact: 'Contact',
+      openMenu: 'Open menu',
+      closeMenu: 'Close menu',
+      toggleTheme: 'Toggle theme',
+    },
+    hero: {
+      tagline: 'Open to new opportunities',
+      role: 'Data Scientist & ML Engineer',
+      description:
+        'Passionate about AI and Machine Learning, I transform data into actionable insights and build intelligent solutions to solve complex problems.',
+      viewProjects: 'View my projects',
+      contactMe: 'Contact me',
+      scrollHint: 'Scroll',
+    },
+    about: {
+      title: 'About',
+      description:
+        'Data Scientist passionate about artificial intelligence and Machine Learning, I specialise in complex data analysis and predictive model development. My expertise covers the entire data project lifecycle, from data collection and preparation to ML model deployment. I love solving complex problems by combining analytical rigour and technical creativity.',
+      qualities: [
+        {
+          title: 'Fast Learner',
+          description:
+            'Quick learning ability and adaptation to new technologies and methodologies.',
+        },
+        {
+          title: 'Problem Solver',
+          description:
+            'Analytical and creative approach to solving complex data science problems.',
+        },
+        {
+          title: 'Autonomy & Communication',
+          description:
+            'Ability to work independently while maintaining clear and effective communication with teams.',
+        },
+      ],
+    },
+    skills: {
+      title: 'Skills',
+      programmingLanguages: 'Programming Languages',
+      engineeringConcepts: 'Engineering Concepts',
+      frontendDevelopment: 'Frontend Development',
+      databaseSystems: 'Databases & Cloud',
+      developmentTools: 'Development Tools',
+      languages: 'Spoken Languages',
+    },
+    experience: {
+      title: 'Experience',
+      professionalTab: 'Professional Experience',
+      academicTab: 'Academic Background',
+      present: 'Present',
+      jobs: [
+        {
+          title: 'Python Developer / Data Visualization Engineer — Internship',
+          company: 'TotalEnergies',
+          period: 'Apr. 2025 — Sept. 2025',
+          location: 'Pau, France',
+          technologies: ['Python', 'Plotly', 'HTML/CSS', 'JavaScript'],
+          description:
+            'Development of a lightweight, script-integrable solution to validate quality controls (QC) on reservoir simulations for engineers. Designed interactive Python visualisations and built a dynamic web dashboard to present results clearly and accessibly.',
+        },
+        {
+          title: 'Machine Learning — Internship',
+          company: 'Universidad de Zaragoza',
+          period: 'Jun. 2024 — Aug. 2024',
+          location: 'Zaragoza, Spain',
+          technologies: ['Python', 'TensorFlow', 'Keras', 'CNN'],
+          description:
+            'Study and application of medical image classification techniques (CNNs, neural networks) for pneumonia detection on chest X-rays.',
+        },
+        {
+          title: 'Java Developer — Internship',
+          company: 'TotalEnergies',
+          period: 'Jun. 2023 — Sept. 2023',
+          location: 'Pau, France',
+          technologies: ['Java', 'SonarQube', 'Jira'],
+          description:
+            'Contributed to development and optimisation of a critical internal application. Used SonarQube to identify and fix code smells and vulnerabilities, actively reducing technical debt and improving overall code quality.',
+        },
+      ],
+      education: [
+        {
+          title: 'Engineering degree, Applied Mathematics — High Performance Data Analytics (HPDA)',
+          company: 'CY Tech',
+          period: '2022 — 2025',
+          location: 'Pau, France',
+        },
+        {
+          title: 'Integrated Preparatory Class',
+          company: 'CY Tech',
+          period: '2020 — 2022',
+          location: 'Pau, France',
+        },
+        {
+          title: 'CPGE PTSI',
+          company: 'Lycée Déodat de Séverac',
+          period: '2019 — 2020',
+          location: 'Toulouse, France',
+        },
+        {
+          title: 'Scientific Baccalaureate',
+          company: 'Lycée Saint Cricq',
+          period: '2016 — 2019',
+          location: 'Pau, France',
+        },
+      ],
+    },
+    projects: {
+      title: 'Projects',
+      viewProject: 'View project',
+      viewGithub: 'View on GitHub',
+      sourcePrivate: 'Source coming soon',
+      filterAll: 'All',
+      viewGrid: 'Grid view',
+      viewList: 'List view',
+      items: [
+        {
+          title: 'Image Denoising via PCA',
+          description:
+            'Gaussian noise reduction on images using Principal Component Analysis. Optimal reconstruction from the top-k components, quantitative comparison (PSNR) against classical filters.',
+          tags: ['Python', 'NumPy', 'Scikit-learn', 'OpenCV'],
+          github: '',
+          impact: 'Improved PSNR vs classical Gaussian / median filters',
+        },
+        {
+          title: 'Algorithmic Trading with Reinforcement Learning',
+          description:
+            'Autonomous trading agent trained on historical equity data. Reward function combining Sharpe ratio, max drawdown and transaction costs.',
+          tags: ['Python', 'PyTorch', 'Gymnasium', 'Stable-Baselines3', 'Pandas'],
+          github: '',
+          impact: 'Multi-asset backtest with realistic transaction costs',
+        },
+        {
+          title: 'Real-time Speech-to-Speech Translator',
+          description:
+            'Full speech translation pipeline: ASR (Whisper), translation, TTS with voice preservation (YourTTS / VITS). Supports more than 5 languages.',
+          tags: ['Python', 'Whisper', 'Transformers', 'FastAPI'],
+          github: '',
+          impact: 'Sub-2s latency on consumer GPU, 5+ languages',
+        },
+        {
+          title: 'Raman Spectroscopy & Chemical Classification',
+          description:
+            'Raman spectra preprocessing (ALS baseline correction, Savitzky-Golay smoothing, normalisation). Multi-class classification of chemical compounds (polymers, biomolecules) using SVM, Random Forest and dense networks.',
+          tags: ['Python', 'Scikit-learn', 'SciPy', 'NumPy'],
+          github: '',
+          impact: 'Reproducible pipeline, > 90% accuracy on in-house dataset',
+        },
+      ],
+    },
+    contact: {
+      title: 'Contact',
+      letsConnect: "Let's Connect",
+      connectDescription:
+        'Always interested in new opportunities, collaborations and conversations.',
+      elsewhere: 'Elsewhere',
+      formName: 'Name',
+      formNamePlaceholder: 'Your name',
+      formEmail: 'Email',
+      formEmailPlaceholder: 'your.email@example.com',
+      formMessage: 'Message',
+      formMessagePlaceholder: 'Your message...',
+      formSend: 'Send Message',
+      formSending: 'Sending...',
+      formSuccess: 'Message sent successfully!',
+      formError: 'An error occurred. Please try again.',
+    },
+    footer: {
+      rights: 'All rights reserved.',
+      builtWith: 'Built with Next.js, Tailwind & lots of coffee.',
+    },
+  },
+}
+
+export type Language = keyof typeof translations
