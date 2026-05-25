@@ -12,6 +12,7 @@ export const translations = {
       openMenu: 'Ouvrir le menu',
       closeMenu: 'Fermer le menu',
       toggleTheme: 'Changer de thème',
+      comingSoon: 'Bientôt disponible',
     },
     hero: {
       tagline: 'Disponible pour de nouvelles opportunités',
@@ -192,6 +193,7 @@ export const translations = {
       openMenu: 'Open menu',
       closeMenu: 'Close menu',
       toggleTheme: 'Toggle theme',
+      comingSoon: 'Coming soon',
     },
     hero: {
       tagline: 'Open to new opportunities',

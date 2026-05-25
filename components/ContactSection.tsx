@@ -30,7 +30,8 @@ const MaltIcon: SocialIcon = (props) => (
 const socialLinks: {
   name: string
   icon: SocialIcon
-  url: string
+  url?: string
+  disabled?: boolean
   brand: string
 }[] = [
   { name: 'GitHub', icon: Github as unknown as SocialIcon, url: 'https://github.com/thomasgth3', brand: 'github' },
@@ -40,7 +41,7 @@ const socialLinks: {
     url: 'https://linkedin.com/in/thomasgth',
     brand: 'linkedin',
   },
-  { name: 'X', icon: XIcon, url: 'https://x.com/thomasgth', brand: 'x' },
+  { name: 'X', icon: XIcon, disabled: true, brand: 'x' },
   { name: 'Malt', icon: MaltIcon, url: 'https://www.malt.fr/profile/thomasgouth', brand: 'malt' },
 ]
 
@@ -252,6 +253,29 @@ export function ContactSection() {
                 <div className="space-y-3">
                   {socialLinks.map((social, i) => {
                     const Icon = social.icon
+                    if (social.disabled) {
+                      return (
+                        <div
+                          key={social.name}
+                          role="link"
+                          aria-disabled="true"
+                          tabIndex={-1}
+                          title={`${social.name} — ${t.nav.comingSoon}`}
+                          className="flex items-center justify-between gap-4 p-4 bg-muted/40 border border-border/30 rounded-2xl opacity-60 cursor-not-allowed select-none"
+                          style={{ transitionDelay: isVisible ? `${i * 80}ms` : '0ms' }}
+                        >
+                          <div className="flex items-center gap-4">
+                            <div className="p-2.5 bg-card/60 rounded-xl">
+                              <Icon className="w-5 h-5" />
+                            </div>
+                            <span className="text-base font-medium">{social.name}</span>
+                          </div>
+                          <span className="text-xs uppercase tracking-wider text-muted-foreground/80 bg-muted/60 border border-border/40 rounded-full px-2.5 py-1">
+                            {t.nav.comingSoon}
+                          </span>
+                        </div>
+                      )
+                    }
                     return (
                       <a
                         key={social.name}

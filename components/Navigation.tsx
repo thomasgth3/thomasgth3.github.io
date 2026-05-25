@@ -102,22 +102,23 @@ export function Navigation() {
             </button>
 
             <div className="hidden md:flex items-center gap-2">
-              <a
-                href="https://x.com/thomasgth"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2.5 rounded-lg hover:bg-muted/50 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-                aria-label="X (Twitter)"
+              <span
+                role="link"
+                aria-disabled="true"
+                tabIndex={-1}
+                title={`X — ${t.nav.comingSoon}`}
+                className="p-2.5 rounded-lg opacity-40 cursor-not-allowed select-none"
+                aria-label={`X — ${t.nav.comingSoon}`}
               >
                 <svg
-                  className="w-5 h-5 text-foreground/80 hover:text-accent transition-colors"
+                  className="w-5 h-5 text-foreground/80"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                   aria-hidden="true"
                 >
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
-              </a>
+              </span>
 
               <a
                 href="https://linkedin.com/in/thomasgth"

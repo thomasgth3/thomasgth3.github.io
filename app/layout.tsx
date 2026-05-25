@@ -50,7 +50,6 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: SITE_NAME,
     description: SITE_DESC,
-    creator: '@thomasgth',
   },
   robots: {
     index: true,
@@ -98,7 +97,6 @@ const personJsonLd = {
   sameAs: [
     'https://github.com/thomasgth3',
     'https://linkedin.com/in/thomasgth',
-    'https://x.com/thomasgth',
     'https://www.malt.fr/profile/thomasgouth',
   ],
   knowsAbout: [
